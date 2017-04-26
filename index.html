@@ -65,7 +65,11 @@ a.before:before,a.after:after{
   height:5px;
   height:0.35rem;
   width:0;
-  background:#C7E299;
+background: #c7e299; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #c7e299 40%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #c7e299 40%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #c7e299 40%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7e299', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 a.third:after{
   left:50%;
@@ -114,6 +118,5 @@ a.before:hover:before,a.after:hover:after{
       </div>
     </div>
     <div class="copy"> © Elliot Gavin Keenan 2017 — present </div>
-    
   </body>
 </html>
