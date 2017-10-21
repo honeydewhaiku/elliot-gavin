@@ -20,7 +20,7 @@ background: linear-gradient(to bottom, rgba(232,239,244,1) 35%,rgba(255,216,231,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eff4', endColorstr='#f7f4ed',GradientType=0 ); /* IE6-9 */
       background-repeat:no-repeat;
       background-attachment:fixed;
-            font-family:"Times New Roman",serif;
+
 
       }
       
@@ -47,6 +47,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eff4', end
                 .col-md-2{
     background-color:#fff;
     border: 1px solid #c4e9ff;
+                  min-width:300px;
+                  max-width:300px;
     border-radius:5px;
       padding:10px;
     margin-top:5px;
@@ -54,6 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eff4', end
           margin-bottom:50px;
                 margin-left:50px;
                       text-align:justify;}
+      
       
                       .col-md-2:hover{
     border: 1px solid #f3d2f7;}
@@ -132,10 +135,9 @@ color:gray;
       text-align:center;
       background-color: #fff;
         text-align:center;
-      display: inline-block;
-              position:relative;
-              top: 100%;
-  transform: translateY(-50%);}
+              position:fixed;
+bottom:0px;
+            display:block;}
       
       .ftext{
                 position: relative;
