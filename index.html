@@ -11,24 +11,30 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-      body{
+     body{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e4a51+0,89d2ed+77,fcb0f3+100 */
 background: rgb(62,74,81); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(62,74,81,1) 0%, rgba(137,210,237,1) 77%, rgba(252,176,243,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(62,74,81,1) 0%,rgba(137,210,237,1) 77%,rgba(252,176,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(62,74,81,1) 0%,rgba(137,210,237,1) 77%,rgba(252,176,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(top, rgba(62,74,81,1) 0%, rgba(137,210,237,1) 77%, rgba(252,176,243,1) 100%) fixed; /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(62,74,81,1) 0%,rgba(137,210,237,1) 77%,rgba(252,176,243,1) 100%) fixed; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(62,74,81,1) 0%,rgba(137,210,237,1) 77%,rgba(252,176,243,1) 100%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4a51', endColorstr='#fcb0f3',GradientType=0 ); /* IE6-9 */
-      background-repeat:no-repeat;
-      background-attachment:fixed;
-
-
-      }
+  background-attachment: fixed;
+  margin-top: 0px;
+  margin-bottom: 0px;
+       min-height:100%;
+       z-index:1;
+}
       
-      .container-fluid{
+      #bgimg{
       background-image:url('https://78.media.tumblr.com/ae94bed3136daa6ce7b0b1a067564d2a/tumblr_oy5j9n1ide1wyarz6o2_250.png');
       background-repeat:repeat;
         background-attachment:fixed;
-     }
+     height:inherit;
+        min-height:100%;
+        width:inherit;
+        min-width:100%;
+        z-index:2;
+      }
 
       
           .col-md-2:first-of-type{
@@ -52,7 +58,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4a51', end
           margin-bottom:50px;
                 margin-left:50px;
                       text-align:justify;
-                display:block;}
+                display:block;
+                z-index:3;}
       
       .col-md-2:first-letter
 		{
@@ -147,15 +154,15 @@ color:gray;
             .footer{
       border-top: 1px solid #e2e2e2; 
       margin-top:40px;
-        padding:20px;
       width:100%;
       text-align:center;
       background-color: #fff;
         text-align:center;
-              position:fixed;
-bottom:0px;
+              position:absolute;
             display:block;
-            height:50px;}
+            height:50px;
+            bottom:0px;
+            position:relative;}
       
       .ftext{
                 position: relative;
@@ -186,182 +193,100 @@ display:block;
  margin:auto;
       }
       
-      .hexagon {
-  position: relative;
-  width: 100px; 
-       height: 57.74px;
-  margin: 28.87px 0;
-  background-image: url(https://static.tumblr.com/9c58ff5951145e1509c4c61a374077ab/tt7ishs/t0Worcv31/tumblr_static_ccp031sd3i80skccgk4o0g4cw.png);
-  background-size: 100px;
-  background-position: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
-        float:left;
-        margin-right:50px;
-        margin-top:0px;
-                
-}
-
-.hexTop,
-.hexBottom {
-  position: absolute;
-  z-index: 1;
-  width: 70.71px;
-  height: 70.71px;
-  overflow: hidden;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background: inherit;
-  left: 13.64px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-
-/*counter transform the bg image on the caps*/
-.hexTop:after,
-.hexBottom:after {
-  content: "";
-  position: absolute;
-  width: 98.0000px;
-  height: 56.58032638058333px;
-  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-28.2902px);
-  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-28.2902px);
-  transform:          rotate(45deg) scaleY(1.7321) translateY(-28.2902px);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  background: inherit;
-}
-
-.hexTop {
-  top: -35.3553px;
-  border-top: solid 1.4142px #fff;
-  border-right: solid 1.4142px #fff;
-}
-
-.hexTop:after {
-  background-position: center top;
-}
-
-.hexBottom {
-  bottom: -35.3553px;
-  border-bottom: solid 1.4142px #fff;
-  border-left: solid 1.4142px #fff;
-}
-
-.hexBottom:after {
-  background-position: center bottom;
-}
-
-.hexagon:after {
-  content: "";
-  position: absolute;
-  top: 0.5774px;
-  left: 0;
-  width: 98.0000px;
-  height: 56.5803px;
-  z-index: 2;
-  background: inherit;
-}
-      
   </style>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="header">
-        <div class="ht center-block">
-          <div class=""><img src="https://static.tumblr.com/9c58ff5951145e1509c4c61a374077ab/tt7ishs/t0Worcv31/tumblr_static_ccp031sd3i80skccgk4o0g4cw.png"
-
-              class="himg"></div>
-          <div class="htext2"> <b>Elliot Gavin Keenan</b> is a writer based at
-            UCLA.<br>
+      <div id="bgimg">
+        <div class="header">
+          <div class="ht center-block">
+            <div class=""><img src="https://static.tumblr.com/9c58ff5951145e1509c4c61a374077ab/tt7ishs/t0Worcv31/tumblr_static_ccp031sd3i80skccgk4o0g4cw.png"
+                class="himg"></div>
+            <div class="htext2"> <b>Elliot Gavin Keenan</b> is a writer based
+              at UCLA.<br>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="main center-block">
-        <div class="row center-block">
-          <div class="col-md-2">
-            <h1>Everything Else:</h1>
-            a lyric essay.<br>
-            <br>
-            <a href="http://www.gravelmag.com/elliot-gavin-keenan.html" role="button"
-
-              class="btn btn-success btn-xs">Read</a> Published in <i>Gravel</i>
-            magazine in February 2017, this creative nonfiction essay speaks of
-            beautiful thinking.<br>
-            <br>
-            <blockquote> <i>I want to write again</i>, she told me one day,
-              sitting outside the front of her house, smoking a cigarette. The
-              smoke drifted into the gray sky and faded like the unintelligible,
-              inexplicable fragments of a dream upon waking. <i>You should</i>,
-              I said. It was the best healing I knew of.</blockquote>
+        <div class="main center-block">
+          <div class="row center-block">
+            <div class="col-md-2">
+              <h1>Everything Else:</h1>
+              a lyric essay.<br>
+              <br>
+              <a href="http://www.gravelmag.com/elliot-gavin-keenan.html" role="button"
+                class="btn btn-success btn-xs">Read</a> Published in <i>Gravel</i>
+              magazine in February 2017, this creative nonfiction essay speaks
+              of beautiful thinking.<br>
+              <br>
+              <blockquote> <i>I want to write again</i>, she told me one day,
+                sitting outside the front of her house, smoking a cigarette. The
+                smoke drifted into the gray sky and faded like the
+                unintelligible, inexplicable fragments of a dream upon waking. <i>You
+                  should</i>, I said. It was the best healing I knew of.</blockquote>
+            </div>
+            <div class="col-md-2">
+              <h1>On Being Insane:</h1>
+              a memoir.<br>
+              <br>
+              <a href="/intro.html" role="button" class="btn btn-success btn-xs">Read
+                intro</a> <button class="btn btn-success btn-xs" disabled="disabled">Buy
+                book</button><br>
+              Anticipated release Fall 2017.<br>
+              <br>
+              <img src="https://68.media.tumblr.com/332a6630e32d18626a8ddf630ddfe2a1/tumblr_ovms9jvqSH1wyarz6o1_540.jpg"
+                class="img-responsive tall"><br>
+              <br>
+              <blockquote> Diagnosed with Asperger's Disorder at age seven,
+                Elliot becomes fascinated with the Diagnostic and Statistical
+                Manual of Mental Disorders (DSM; the Bible of American
+                psychiatry) and its enumeration, categorization, and
+                systematization of innate human differences. However, Elliot's
+                dreams of being a psychologist seem ever further out of reach
+                until one professor takes notice of his unique abilities. </blockquote>
+            </div>
+            <div class="col-md-2"> <img src="https://78.media.tumblr.com/1e20aecc0d856972d95283367860d8da/tumblr_oxsacxxLxX1wyarz6o1_1280.jpg"
+                class="img-responsive tall"> </div>
+            <div class="col-md-2">
+              <h1>About me.</h1>
+              <br>
+              <br>
+              <div class="just"> I am a PhD student in Human Development &amp;
+                Psychology at the University of California, Los Angeles. I'm 21
+                years old. My favorite color (if you were wondering) is blue,
+                which is convenient as I consider myself a Ravenclaw. I love
+                Pokémon; I also love strategy board games, cats, swingsets, and
+                using italics. You may have heard that I am on the autism
+                spectrum. Fortunately, these rumors are true.</div>
+            </div>
+            <div class="col-md-2">
+              <h1>Interviews.</h1>
+              <br>
+              <br>
+              <a href="https://www.suffolkcountynews.net/4770/Search-for-self-leads-to-a-book">Interview
+                with Suffolk County Newspaper</a>.</div>
+            <div class="col-md-2">
+              <h1>Currently reading:</h1>
+              <i>Brief Encounters: A Collection of Contemporary Nonfiction</i> </div>
+            <div class="col-md-2">
+              <h1>Links.</h1>
+              <br>
+              <br>
+              <a href="https://github.com/honeydewhaiku/elliot-gavin/raw/master/CV.pdf"
+                role="button" class="btn btn-info btn-xs">Elliot's CV</a> </div>
+            <div class="col-md-2">
+              <h1>Social media.</h1>
+              <br>
+              <br>
+              <a role="button" class="btn btn-primary" href="https://elli-xir.tumblr.com/">Tumblr.</a>
+              <a role="button" class="btn btn-primary" href="https://www.facebook.com/elliotgavinkeenan/">Facebook.</a>
+              <a role="button" class="btn btn-primary" href="https://twitter.com/elixirElliot">Twitter.</a>
+            </div>
           </div>
-          <div class="col-md-2">
-            <h1>On Being Insane:</h1>
-            a memoir.<br>
-            <br>
-            <a href="/intro.html" role="button" class="btn btn-success btn-xs">Read
-              intro</a> <button class="btn btn-success btn-xs" disabled="disabled">Buy
-              book</button><br>
-            Anticipated release Fall 2017.<br>
-            <br>
-            <img src="https://68.media.tumblr.com/332a6630e32d18626a8ddf630ddfe2a1/tumblr_ovms9jvqSH1wyarz6o1_540.jpg"
-
-              class="img-responsive tall"><br>
-            <br>
-            <blockquote> Diagnosed with Asperger's Disorder at age seven, Elliot
-              becomes fascinated with the Diagnostic and Statistical Manual of
-              Mental Disorders (DSM; the Bible of American psychiatry) and its
-              enumeration, categorization, and systematization of innate human
-              differences. However, Elliot's dreams of being a psychologist seem
-              ever further out of reach until one professor takes notice of his
-              unique abilities. </blockquote>
-          </div>
-          <div class="col-md-2"> <img src="https://78.media.tumblr.com/1e20aecc0d856972d95283367860d8da/tumblr_oxsacxxLxX1wyarz6o1_1280.jpg"
-
-              class="img-responsive tall"> </div>
-          <div class="col-md-2">
-            <h1>About me.</h1>
-            <br>
-            <br>
-            <div class="just"> I am a PhD student in Human Development &amp;
-              Psychology at the University of California, Los Angeles. I'm 21
-              years old. My favorite color (if you were wondering) is blue,
-              which is convenient as I consider myself a Ravenclaw. I love
-              Pokémon; I also love strategy board games, cats, swingsets, and
-              using italics. You may have heard that I am on the autism
-              spectrum. Fortunately, these rumors are true.</div>
-          </div>
-          <div class="col-md-2">
-            <h1>Interviews.</h1>
-            <br>
-            <br>
-            <a href="https://www.suffolkcountynews.net/4770/Search-for-self-leads-to-a-book">Interview
-              with Suffolk County Newspaper</a>.</div>
-          <div class="col-md-2">
-            <h1>Currently reading:</h1>
-            <i>Brief Encounters: A Collection of Contemporary Nonfiction</i> </div>
-          <div class="col-md-2">
-            <h1>Links.</h1>
-            <br>
-            <br>
-            <a href="https://github.com/honeydewhaiku/elliot-gavin/raw/master/CV.pdf" role="button" class="btn btn-info btn-xs">Elliot's
-              CV</a> </div>
-          <div class="col-md-2">
-            <h1>Social media.</h1>
-            <br>
-            <br>
-            <a role="button" class="btn btn-primary" href="https://elli-xir.tumblr.com/">Tumblr.</a>
-            <a role="button" class="btn btn-primary" href="https://www.facebook.com/elliotgavinkeenan/">Facebook.</a>
-            <a role="button" class="btn btn-primary" href="https://twitter.com/elixirElliot">Twitter.</a>
-          </div>
+        </div>
+        <div class="footer">
+          <div class="ftext">© Elliot Gavin Keenan 2017 — present</div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="ftext">© Elliot Gavin Keenan 2017 — present</div>
-    </div>
-    
   </body>
 </html>
