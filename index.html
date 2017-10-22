@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elliot Gavin Keenan</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -81,8 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4a51', end
       .header{
       border-bottom: 1px solid #e2e2e2; 
       margin-bottom:40px;
-        padding:20px;
-      width:100%;
+      width:inherit;
       height:150px;
       text-align:center;
       background-color: #fff;
@@ -127,6 +126,8 @@ color:gray;
           position: relative;
   top: 50%;
   transform: translateY(-50%);
+        float:left;
+        margin-right:50px;
       }
       
             div.copy{
@@ -148,13 +149,13 @@ color:gray;
       margin-top:40px;
         padding:20px;
       width:100%;
-      height:70px;
       text-align:center;
       background-color: #fff;
         text-align:center;
               position:fixed;
 bottom:0px;
-            display:block;}
+            display:block;
+            height:50px;}
       
       .ftext{
                 position: relative;
@@ -185,14 +186,93 @@ display:block;
  margin:auto;
       }
       
+      .hexagon {
+  position: relative;
+  width: 100px; 
+       height: 57.74px;
+  margin: 28.87px 0;
+  background-image: url(https://static.tumblr.com/9c58ff5951145e1509c4c61a374077ab/tt7ishs/t0Worcv31/tumblr_static_ccp031sd3i80skccgk4o0g4cw.png);
+  background-size: 100px;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+        float:left;
+        margin-right:50px;
+        margin-top:0px;
+                
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 13.64px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 98.0000px;
+  height: 56.58032638058333px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-28.2902px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-28.2902px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-28.2902px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -35.3553px;
+  border-top: solid 1.4142px #fff;
+  border-right: solid 1.4142px #fff;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -35.3553px;
+  border-bottom: solid 1.4142px #fff;
+  border-left: solid 1.4142px #fff;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.5774px;
+  left: 0;
+  width: 98.0000px;
+  height: 56.5803px;
+  z-index: 2;
+  background: inherit;
+}
+      
   </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="header">
         <div class="ht center-block">
-          <div class="htext1"><img src="https://static.tumblr.com/9c58ff5951145e1509c4c61a374077ab/tt7ishs/t0Worcv31/tumblr_static_ccp031sd3i80skccgk4o0g4cw.png"
-              class="himg img-responsive"> </div>
+          <div class=""><img src="https://static.tumblr.com/9c58ff5951145e1509c4c61a374077ab/tt7ishs/t0Worcv31/tumblr_static_ccp031sd3i80skccgk4o0g4cw.png"
+              class="himg"></div>
           <div class="htext2"> <b>Elliot Gavin Keenan</b> is a writer based at
             UCLA.<br>
           </div>
@@ -259,10 +339,11 @@ display:block;
             <h1>Currently reading:</h1>
             <i>Brief Encounters: A Collection of Contemporary Nonfiction</i> </div>
           <div class="col-md-2">
-            <h1>Currently writing:</h1>
-            <i>Nothing at the moment...</i><br>
-            <h1>Progress:</h1>
-            0%</div>
+            <h1>Links.</h1>
+            <br>
+            <br>
+            <a href="/cv.pdf" role="button" class="btn btn-info btn-xs">Elliot's
+              CV</a> </div>
           <div class="col-md-2">
             <h1>Social media.</h1>
             <br>
