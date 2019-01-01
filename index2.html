@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <title>Elliot Gavin Keenan, author</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla%7CShrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+    <style>
+body {font-family: "Karla", sans-serif;
+background-color:#fff;}
+      
+      h1,h2,h3,h4,h5,h6{
+      font-family: "Shrikhand", serif;
+      color:#68829e;
+      border-bottom:1px solid #eee;}
+     
+      
+body, html {
+  height: 100%;
+color: #364456;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+
+
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  min-height: 100%;
+background-color:rgb(24, 30, 38);
+background-image: url("https://66.media.tumblr.com/56e75d16ffd33563c4c0cb758601a4cf/tumblr_pkmkmrii1Q1wyarz6o1_100.png"); 
+    background-repeat: repeat;
+
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://66.media.tumblr.com/a35bf406f4502bc16c0903544ca78c37/tumblr_pkmg9czJfV1wyarz6o3_1280.jpg");
+  min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://66.media.tumblr.com/1a16b500ce43d59b57200676dd319e19/tumblr_pkmg9czJfV1wyarz6o1_1280.jpg");
+  min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.w3-wide {      font-family: "Shrikhand", serif;
+      color:#598234;
+letter-spacing:normal;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+      
+      .w3-bar{
+      background-color:#eee;
+      color:#000;}
+      
+      .darkblue{
+      background-color:#c8d8ea;
+      }
+      
+      .green{
+      background-color:#aebd38;
+      }
+      
+      .fa, .fas{
+      padding-right:5px;}
+      
+.w3-button:hover{
+      background-color:white!important;
+      }
+      
+      .radius{
+      border-radius:10px;}
+      
+      .quote{
+      font-size:20pt;
+      padding:10px;
+      text-align:center;
+      width:1000px;
+      font-weight:bold;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;}
+      
+      .imh{
+      text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+      }
+      
+      .indent{
+      padding-left:15px;
+      }
+
+</style> </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar"> <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fas fa-leaf"></i> </a> <a href="#home" class="w3-bar-item w3-button"><i
+            class="fas fa-frog"></i>HOME</a> <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i
+            class="fas fa-glasses"></i> ABOUT</a> <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i
+            class="fas fa-book"></i> PORTFOLIO</a> <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i
+            class="fas fa-comment-alt"></i> CONTACT</a> <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fas fa-search"></i> </a> </div>
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a> </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large  w3-xlarge w3-wide w3-animate-opacity">
+          <img src="https://66.media.tumblr.com/b7c1b389eaed6cb9bd7365422bf04d34/tumblr_pkmgimYAWG1wyarz6o1_1280.png">
+        </span> </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3>
+        <center>About the Author</center>
+      </h3>
+      <p>Elliot Gavin Keenan is an author and a PhD student in Human Development
+        &amp; Psychology at UCLA. His research investigates cognitive processes
+        in autistic individuals. Although he is only 23 years old, he is an
+        up-and-coming author of creative nonfiction and memoir. Keenan's
+        literary work often discusses personal experiences of life with autism
+        and severe mental illness. In his first book, he explored identity and
+        sense of self. Aside from writing, Keenan's interests include strategy
+        board games, swinging on swing-sets, and using italics. You can check
+        out this <a href="https://www.suffolkcountynews.net/4770/Search-for-self-leads-to-a-book">interview
+          with the Suffolk County Newspaper</a>. </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large"> <img src="https://66.media.tumblr.com/99739bec40080a4a49696d0761139f81/tumblr_pkmi0hDXiH1wyarz6o1_540.png"
+            class="w3-round w3-image radius" alt="Photo of Me" height="333" width="500">
+        </div>
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p><b>Myself in my own words...</b> His step has a certain
+            premeditated terseness that comes from being aware of the
+            awkwardness of one's own movements from an early age. The walk is
+            pensive, repetitive - back and forth with a slow gait, the rhythm of
+            which is like that of a Newton's cradle. Click... click. Dark curls
+            graze the top of inch-thick glasses. He is young, short with a
+            compact stature, androgynous if not for black stubble tracing the
+            sides of his jaw. Although he cannot sing, he believes his vocal
+            range to be a lyric tenor. Idiosyncratic sensibilities suit him. He
+            wears eccentricity like a soft t-shirt with the tags ripped out.
+            Comfort, however, is not to be confused with courage. One cannot
+            extract their own quirks or so-called glitches from the program,
+            merely accept them as chance mutations - perhaps, miraculous
+            accidents.</p>
+        </div>
+      </div>
+      <p class="w3-large w3-center w3-padding-16"></p>
+      <h3>
+        <center> Passive Abilities</center>
+      </h3>
+      <p></p>
+      <p class="w3-wide"><i class="fa fa-puzzle-piece"></i>Autism Focus</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small green w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fas fa-bolt"></i>Spark of Inspiration</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small green w3-center" style="width:50%">50%</div>
+      </div>
+      <p class="w3-wide"><i class="fas fa-transgender-alt"></i>Gender Chameleon</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small green w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+    <!-- <div class="w3-row w3-center darkblue w3-padding-16">
+      <div class="w3-quarter w3-section"> <span class="w3-xlarge">14+</span><br>        Partners </div>      <div class="w3-quarter w3-section"> <span class="w3-xlarge">55+</span><br>        Projects Done </div>      <div class="w3-quarter w3-section"> <span class="w3-xlarge">89+</span><br>        Happy Clients </div>      <div class="w3-quarter w3-section"> <span class="w3-xlarge">150+</span><br>        Meetings </div>    </div> -->
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle"> <span class="w3-xxlarge w3-text-white w3-wide imh">PORTFOLIO</span>
+      </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <p class="w3-center"> </p>
+      <h3> Books </h3>
+      <a href="https://www.amazon.com/gp/product/1947381024">On Being Insane</a>,
+      a lyrical memoir published October 2017.
+      <p class="indent"> After being diagnosed with Asperger's Disorder at age
+        seven, Elliot becomes fascinated with the Diagnostic and Statistical
+        Manual of Mental Disorders (the so-called Bible of American psychiatry)
+        and its enumeration, categorization, and systematization of innate human
+        differences. This specialized knowledge of the DSM's rules and codes
+        comes in handy as Elliot struggles through multiple psychiatric
+        hospitalizations for severe bipolar depression, but his dreams of being
+        a clinical psychologist seem ever further out of reach until a kindly
+        professor and autism scientist termed herein as Dr. Pinball takes notice
+        of his abilities.<br>
+      </p>
+      <u>Luminous Mind</u>.
+      <p class="indent"> This is my upcoming book! Stay tuned for further
+        information. </p>
+      <br>
+      <br>
+      <h3> Essays </h3>
+      <a href="http://www.gravelmag.com/elliot-gavin-keenan.html">Everything
+        Else</a>, in Gravel (February 2017).
+      <p class="indent"> But she told me that she used to write as if seized by
+        a certain fervor for it, for the language, for poetry. I imagined Van
+        Gogh and his passion for painting, his insatiable hunger. I thought I
+        wanted to kiss those lips stained with yellow paint. Yellow, the color
+        of the edges of a street, the boundaries of a self crossed like two
+        neurons, the actualization of a synesthetic dream. To imbibe it is to
+        take all of that in, the passion, life thrust under your tongue. I
+        wanted that. </p>
+      <br>
+      <a href="http://lunchticket.org/notes-to-self/">Notes to Self</a>, in
+      Lunch Ticket (Spring/Summer 2018).
+      <p class="indent"> When I cease to exist within our mind, I suppose that
+        is like dying. I have always been characterized as a confident voice;
+        yet I am face-to-face with an indescribable fear — I do not know what
+        will happen to me after I die. But, I think I will miss being alive;
+        breathing, eating, writing, <i>living</i>, even if you do not remember
+        me or anything anymore, maybe in some way, somewhere — I will live on in
+        you.</p>
+    </div>
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="quote w3-display-middle"> <span class="w3-text-white w3-center">Basically,
+          even in the midst of one of my attacks of melancholy, I was never too
+          sure what to do with this life except love it, love it to distraction
+          and tell it so: write love letters, illuminate the whiteness of a
+          sheet of paper by sprinkling ink on it. [...] The composition of love
+          letters is, to be sure, not a very serious occupation and lacks great
+          economic importance. But if no one practiced it anymore, if no one
+          reminded life of its own purity, then life would end up letting itself
+          wither away and die, don’t you think? <br>
+          - Christian Bobin, <i>I Never Dared Hope for You</i></span> </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container"> <img src="https://66.media.tumblr.com/20ef2271eba3e231f4d790d5ffec8fc9/tumblr_pkmmpr0pPh1wyarz6o1_250.png"
+            class="w3-image w3-round" style="width:100%"> </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom"> <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+            Los Angeles, US<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+            Email: elliotgavinkeenan@gmail.com<br>
+          </div>
+          <p>All inquiries are welcome.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center darkblue w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To
+        the top</a>
+      <div class="w3-xlarge w3-section"> <i class="fa fas-facebook-official w3-hover-opacity"></i>
+        <i class="fa fas-tumblr w3-hover-opacity"></i> <i class="fa fas-twitter w3-hover-opacity"></i>
+      </div>
+    </footer>
+    <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script> </body>
+</html>
