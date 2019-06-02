@@ -20,7 +20,7 @@
         background-attachment:fixed;
         
 font-family:'Kreon', serif;
-       font-size:14px;
+       font-size:12px;
        letter-spacing:1px;
 }
       
@@ -42,16 +42,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313c54', end
        
       }
       
-                .col-md-2{
-    background-color:rgba(255,255,255,.8);
+                .col-md-3{
+    background-color:rgba(255,255,255,.85);
     border: 8px solid #fff;
     border-radius:7px;
       padding:10px;
           margin:20px;
                       text-align:justify;
-        flex-basis:400px;
-                  flex-grow:1;
+        
                   z-index:3;
+                  flex-basis:auto;
+                 
                }
       
       .sp
@@ -75,8 +76,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313c54', end
 		}
       
       
-                      .col-md-2:hover{
-                           background-color:rgba(255,255,255,.95);
+                      .col-md-3:hover{
+                           background-color:rgba(255,255,255,1);
     border: 8px solid #9FD5E5;}
       
       .header{
@@ -87,6 +88,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313c54', end
       text-align:center;
       
 }
+      
+      .asc{
+       align-self:center;
+      }
       
       .ht{
   display: flex;
@@ -134,7 +139,7 @@ text-align:center;
             letter-spacing:.75px;
 
         display:inline;
-        font-size:14px;
+        font-size:16px;
         
         padding-left:20px;
       }
@@ -167,11 +172,12 @@ text-align:center;
   top: 50%;
   transform: translateY(-50%);}
       
-      blockquote{
+      .block{
           font-family:'Kreon',serif;
-    font-size:12px;
     letter-spacing:.75px;
-        border:none;
+        width:80%;
+        position:relative;
+        margin: auto;
       }
       
       .just{
@@ -187,21 +193,21 @@ text-align:center;
       
             .main{
 max-width:100%;
-        text-align:center;
   display: flex;
-  align-items: stretch;
+  align-items: baseline;
         flex-wrap:wrap;
-                justify-content:space-evenly;
+                justify-content:center;
         align-content:center;
         
       }
 
       
       		ul {
-    list-style-image: url('https://orig00.deviantart.net/a128/f/2016/040/5/b/cross___blue_by_sukiie-d9r3ahn.png');
+    list-style-image: url('https://66.media.tumblr.com/19bbfcb24e73acdd09027950570614c9/tumblr_psg9urunFa1wyarz6o1_75sq.gif');
         list-style-position: outside;
         padding-left:20px;
         padding-right:10px;
+            line-height:130%;
 }
      
       .center{
@@ -209,13 +215,13 @@ max-width:100%;
       display:block;}
       
       .photo{
-      border:1px solid #dbdbdb;
-      padding:5px;
-      
+      border:2px solid #dbdbdb;
+      padding:6px;
+      display:inline;
+        border-radius:25px;
       background:white;
-      width:300px;
-        max-height:350px;
-      height:auto;
+        max-height:300px;
+      width:auto;
       text-align:center;}
 
       .big{
@@ -235,10 +241,10 @@ max-width:100%;
       <div class="container-fluid">
         <div class="header">
           <div class="ht"> Elliot Gavin Keenan </div>
-          <div class="subh"> lyric essayist and author of creative nonfiction </div>
+          <div class="subh"> lyric essayist, memoirist, &amp; poet </div>
         </div>
         <div class="main">
-          <div class="col-md-2">
+          <div class="col-md-3">
             <h1>Myself In My Own Words</h1>
             <div class="narrow"> Each step has a certain tension; the
               premeditated rhythm of his pacing evokes the mechanical motions of
@@ -246,13 +252,11 @@ max-width:100%;
               <br>
               Yet there is a degree of self-awareness in his graceless stride -
               perhaps a consequence of being made aware of the awkwardness of
-              his own movements from an early age.<br>
-              <br>
-              He is about five foot, with a compact physique. The impression he
-              gives is androgynous if not for the dark stubble that traces his
-              jaw. His hair - thick, coarse curls the color of charcoal - grazes
-              the top of his perfectly round spectacles. He wears idiosyncracy
-              like a favorite t-shirt.<br>
+              his own movements from an early age. He is about five foot, with a
+              compact physique. The impression he gives is androgynous if not
+              for the dark stubble that traces his jaw. His hair - thick, coarse
+              curls the color of charcoal - grazes the top of his perfectly
+              round spectacles. He wears idiosyncracy like a favorite t-shirt.<br>
               <br>
               He doesn't quite look at you as he speaks. Nonetheless, with his
               gaze meandering about the room, he is quietly observant. He has an
@@ -260,85 +264,91 @@ max-width:100%;
               effervescence to it - a breathy timbre that somehow complements
               his careful articulation of speech. <br>
               <br>
-              Although he cannot sing, he believes his vocal range to be a <i>lyric
-                tenor</i>. His conversational speech flows in a metrical rhythm,
-              one reminiscient of poetry readings thanks to its highly
-              intentional and somewhat monotonous inflection. Yet, when he reads
-              poetry aloud, his vocal prosody takes on a strikingly rhapsodic
-              quality.</div>
+              His conversational speech flows with a metrical rhythm,
+              reminiscient of formal poetry thanks to its intentionality and
+              constrained inflection. Yet, when he reads poetry aloud, his vocal
+              prosody takes on a strikingly rhapsodic quality. Although he
+              cannot sing, he believes his vocal range to be a <i>lyric tenor</i>.</div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <h1>About Elliot</h1>
             <div class="just">
               <div class="big"> Elliot Gavin Keenan is 23 years old and a PhD
-                student in Human Development &amp; Psychology at UCLA. He is
-                interested in creating statistical models of mental health
-                conditions. His hobbies include playing strategy board games,
-                anything related to Pokémon, and painting.</div>
+                student in Human Development &amp; Psychology at the University
+                of California, Los Angeles. He is interested in creating
+                statistical models of mental health conditions, drawing on his
+                own experiences with autism and bipolar disorder. His hobbies
+                include strategy board games, riding push scooters around town,
+                and painting.</div>
             </div>
             <br>
             <br>
-            <div class="center"> <img src="https://66.media.tumblr.com/6e71728eb8924eed5f976863c832d6c3/tumblr_ppwxdwpqej1wyarz6o1_500.png"
+            <div class="center"><img src="https://66.media.tumblr.com/6e71728eb8924eed5f976863c832d6c3/tumblr_ppwxdwpqej1wyarz6o1_500.png"
                 class="photo"></div>
-            <br>
-            <br>
-            <h1>Media &amp; Interviews</h1>
-            <a href="https://www.suffolkcountynews.net/4770/Search-for-self-leads-to-a-book">Interview
-              with Suffolk County Newspaper</a>. <br>
-            <br>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <h1>On Being Insane</h1>
-            A lyrical memoir I wrote in my senior year of college that explores,
-            questions, and celebrates the self. It was released in October 2017.<br>
+            <div class="big">A lyrical memoir I wrote in my senior year of
+              college, and published by Dreaming Big Publications in October
+              2017.</div>
+            <br>
+            <br>
+            The book is a mosaic of nonlinear fragments, highly experiential as
+            it swirls through the speaker's deep-seated uneasiness with a
+            subjective loss of himself and his memories. Yet while the past is
+            held up to the light, the narrative is propelled forward by the
+            rip-current of transition at the precipice of emerging adulthood. <i>On
+              Being Insane</i> explores the notion of identity, navigates the
+            liminal spaces of intersectionality, and ultimately sings in an
+            unflinchingly honest celebration of the self.<br>
             <br>
             <a href="https://www.amazon.com/gp/product/1947381024" role="button"
-              class="btn btn-success btn-xs center">Buy it on Amazon</a><br>
-            <br>
-            <img src="https://d188rgcu4zozwl.cloudfront.net/content/B076NPLBR4/resources/1063097003"
-              class="img-responsive tall"> </div>
-          <div class="col-md-2">
-            <h2>Everything Else</h2>
-            <br>
-            <br>
+              class="btn btn-success btn-xs center">Buy it on Amazon</a>. </div>
+          <div class="col-md-3">
+            <h1>Everything Else</h1>
             <a href="http://www.gravelmag.com/elliot-gavin-keenan.html" role="button"
               class="btn btn-success btn-xs center">Read</a><br>
-            Published in Gravel in February 2017, this creative nonfiction essay
-            "speaks of beautiful thinking". <br>
-            <blockquote> She’s a doctoral student in the psychology department.
-              But she told me that she used to write as if seized by a certain
-              fervor for it, for the language, for poetry. I imagined Van Gogh
-              and his passion for painting, his insatiable hunger. I thought I
-              wanted to kiss those lips stained with yellow paint. Yellow, the
-              color of the edges of a street, the boundaries of a self crossed
-              like two neurons, the actualization of a synesthetic dream. To
-              imbibe it is to take all of that in, the passion, life thrust
-              under your tongue. I wanted that. </blockquote>
+            <div class="big">Published in Gravel in February 2017, this creative
+              nonfiction essay "speaks of beautiful thinking".</div>
             <br>
-            <h2> Notes to Self </h2>
-            <br>
-            <br>
-            <a href="http://lunchticket.org/notes-to-self/" role="button" class="btn btn-success btn-xs center">Read</a><br>
-            Published in Lunch Ticket in Spring/Summer 2018. <br>
-            <blockquote> Yes, one day — maybe soon, I will put down the pen, and
-              I will leave you. Maybe ECT will bring me back for a while. But
-              not forever. When this happens, you will be hurt and alone, I
-              know. When I cease to exist within our mind, I suppose that is
-              like dying. I have always been characterized as a confident voice;
-              yet I am face-to-face with an indescribable fear — I do not know
-              what will happen to me after I die. But, I think I will miss being
-              alive; breathing, eating, writing, <i>living</i>, even if you do
-              not remember me or anything anymore, maybe in some way, somewhere
-              — I will live on in you. </blockquote>
+            <div class="block"> She’s a doctoral student in the psychology
+              department. But she told me that she used to write as if seized by
+              a certain fervor for it, for the language, for poetry. I imagined
+              Van Gogh and his passion for painting, his insatiable hunger. I
+              thought I wanted to kiss those lips stained with yellow paint.
+              Yellow, the color of the edges of a street, the boundaries of a
+              self crossed like two neurons, the actualization of a synesthetic
+              dream. To imbibe it is to take all of that in, the passion, life
+              thrust under your tongue. I wanted that. </div>
           </div>
-          <div class="col-md-2">
-            <h1>Influences</h1>
-            Maggie Nelson (Bluets)<br>
-            Annie Dillard (Pilgrim at Tinker Creek)<br>
-            Kay Redfield Jamison (An Unquiet Mind)<br>
-            Christian Bobin (A Little Party Dress)<br>
-            John Elder Robison (Look Me in the Eye) <br>
+          <div class="col-md-3">
+            <h1> Notes to Self </h1>
+            <a href="http://lunchticket.org/notes-to-self/" role="button" class="btn btn-success btn-xs center">Read</a><br>
+            <div class="big">Published in Lunch Ticket in Spring/Summer 2018.</div>
             <br>
+            <div class="block"> Yes, one day — maybe soon, I will put down the
+              pen, and I will leave you. Maybe ECT will bring me back for a
+              while. But not forever. When this happens, you will be hurt and
+              alone, I know. When I cease to exist within our mind, I suppose
+              that is like dying. I have always been characterized as a
+              confident voice; yet I am face-to-face with an indescribable fear
+              — I do not know what will happen to me after I die. But, I think I
+              will miss being alive; breathing, eating, writing, <i>living</i>,
+              even if you do not remember me or anything anymore, maybe in some
+              way, somewhere — I will live on in you. </div>
+          </div>
+          <div class="col-md-3">
+            <h1>Influences</h1>
+            <ul>
+              <li>Maggie Nelson (Bluets)</li>
+              <li> Annie Dillard (Pilgrim at Tinker Creek)</li>
+              <li>Kay Redfield Jamison (An Unquiet Mind)</li>
+              <li>Susanna Kaysen (Girl, Interrupted)</li>
+              <li>Christian Bobin (A Little Party Dress)</li>
+              <li>John Elder Robison (Look Me in the Eye)</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
             <h1>Favorite Quotes</h1>
             <div class="just"> <i>If I were to turn these love letters into a
                 book, the inscription would be by Barthes, &amp; it would say:</i>
@@ -367,8 +377,11 @@ max-width:100%;
             <br>
             <br>
           </div>
-          <div class="col-md-2">
-            <h1>Links</h1>
+          <div class="col-md-3">
+            <h1>Media &amp; Interviews</h1>
+            <a href="https://www.suffolkcountynews.net/4770/Search-for-self-leads-to-a-book">Interview
+              with Suffolk County Newspaper</a><br>
+            <h1>Links &amp; Social Media</h1>
             <a href="https://github.com/honeydewhaiku/elliot-gavin/raw/master/CV.pdf"
               role="button" class="btn btn-info btn-xs">Elliot's CV</a> <a href="https://zephyr-specs.tumblr.com/"
               role="button" class="btn btn-info btn-xs">Tumblr</a> <a role="button"
@@ -377,24 +390,21 @@ max-width:100%;
               </a> <br>
             <h1>Contact</h1>
             <a role="button" class="btn btn-primary" href="mailto:egkeenan@ucla.edu">Email
-              </a> </div>
-          <div class="col-md-2">
-            <h1> Fun Facts </h1>
+              </a> <br><br>
+          </div>
+          <div class="col-md-3">
+            <h1> Fun Facts about Elliot</h1>
             <ul>
               <li>I'm a Ravenclaw.</li>
-              <li>I collect Nintendo handhelds. I have an original Game Boy
-                custom refurbished with NES buttons, an Advance, an AGS-101
-                Pikachu SP from 2005, a Micro with the 3 original faceplates,
-                the Dialga/Palkia DS Lite, the Pikachu/Eevee Switch, and (of
-                course) a 3DS.</li>
+              <li>I collect Nintendo handhelds (Game Boy and Nintendo DS
+                consoles).</li>
               <li>I don't like coffee. My hot beverage of choice is Earl Grey
                 tea.</li>
-              <li>My main mode of transportation is a kick scooter.</li>
-              <li>Some of my favorite Pokémon: Smeargle, Leafeon, Jolteon,
-                Decidueye, Minccino, Alolan Raichu</li>
+              <li>Some of my favorite Pokémon: Smeargle, Jolteon, Decidueye,
+                Minccino</li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <h1> Upcoming Work </h1>
             I'm writing a second memoir, entitled <i>Luminous Mind</i>. The
             first draft is complete (updated 4/13/19). More information should
