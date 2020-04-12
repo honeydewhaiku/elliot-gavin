@@ -2,125 +2,142 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <title>Elliot Gavin Keenan</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla%7CCute+Font%7CDamion%7CKreon"
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,600&amp;family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
       rel="stylesheet">
     <style>
-     body{
-
-               background-image:url('https://66.media.tumblr.com/a2f190c6ca60ee1a5311ffc5cb930370/tumblr_pseadusI131wyarz6o5_400.png');
-      background-repeat:repeat;
-        background-attachment:fixed;
-font-family:'Kreon', serif;
-       font-size:13px;
-       letter-spacing:1px;
-}
+      body{
+background:#f9f9f9;
+    color:black;
+    font-family:"IBM Plex Serif",serif;
+    font-size:11px;
+    letter-spacing:.75px;}
       
-     
-      #bgimg{
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4794d3+0,eaa1c3+100 */
-background: #43C6AC; /* Old browsers */
-background: -moz-linear-gradient(top,  #43C6AC 0%, #F8FFAE 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #43C6AC 0%,#F8FFAE 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #43C6AC 0%,#F8FFAE 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43C6AC', endColorstr='#F8FFAE',GradientType=0 ); /* IE6-9 */
+      .gradient{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,fdffff+0,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+89,b1d8f5+91,caddb8+100 */
+background: #e1ffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #e1ffff 0%, #fdffff 0%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 89%, #b1d8f5 91%, #caddb8 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #e1ffff 0%,#fdffff 0%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 89%,#b1d8f5 91%,#caddb8 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #e1ffff 0%,#fdffff 0%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 89%,#b1d8f5 91%,#caddb8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#caddb8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  background-attachment: fixed;
+
+background-repeat:no-repeat;
+        background-size:cover;
+        width:100%;
         min-height:100%;
-        min-width:100%;
+        height:auto;
+background-attachment: fixed;
+        position:fixed;
+
+        
+      }
+      
+      .slide{
+        position:fixed;
+      background-color: #323233;
+        background-attachment: fixed;
+        width:50%;
+        min-height:100%;
+        height:auto;
+background-size:cover;
+
+      }
+      
+      .wrapper{
         position:absolute;
-      z-index:1;
-       opacity:.85;
-        top:0px;
-        left:0px;
-        padding-bottom:20px;
+      display:flex;
+        justify-content:center;
+  align-items: center;
+        width:100%;
+          height:100%;
       }
       
-                #mainc{
-    background-color:rgba(255,255,255,.75);
-    border: 8px solid #fff;
-  width:800px;
-                  height:auto;
+      .container-lg{
+        position:absolute;
+    background-color:rgba(255,255,255,.8);
+    border: 5px solid #fff;
+    border-radius:5px;
+                width:30%;
+        min-width:400px;
+        height:auto;
+        margin-bottom:20px;
+        left:35%;
+        top: 20%;
+      }
+      
+            .copy{
+        position:absolute;
+top: 15%;
+text-align:center;
+              min-width:100%;
+              font-family:"Cute Font",cursive;
+              font-size:16px;
+              color:#8e8e8e;
 
-          margin:auto;
-                  margin-top:20px;
-                      text-align:justify;
-        color:#22031F;
-                  z-index:3;
-                  padding-bottom:20px;
-               }
-      
-      #maind{
-      width:650px;
-        padding:10px;
- margin:auto;
-        padding-top:20px;
       }
       
-      
-      #menu2{
-      width:700px;
-      margin-left:auto;
-      margin-right:auto;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      padding:10px;
-      font-family: 'Cute Font', cursive;
-      letter-spacing:.75px;
-      text-align:center;
-
-      background-color:rgba(255, 255, 255, .4);
-      }
-      
-      #menu2 a{
-      display:inline-block;
-      margin-right:30px;
-      color:#22031F;
-      text-decoration:none;
-      background-color:#fff;
-      padding:3px;
-      padding-left:15px;
-      padding-right:15px;
-border-radius:10%;
-              font-size:18px; 
-      }
-      
-      #menu2 a:hover{
-      color:#A3D19F;}
-      
-      .sp
+      .bio:first-letter
 		{
-			width: 15px;
-			height: 15px;
+			width: 30px;
+			height: 30px;
 			padding: 5px;
 			margin-bottom: 0px;
 			margin-right: 4px;
 			padding-right:8px;
 			float: left;
-      background: gray;
+      background: #a8d2ed; /* Old browsers */
+background: -moz-linear-gradient(top, #a8d2ed 0%, #c7e299 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a8d2ed 0%,#c7e299 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a8d2ed 0%,#c7e299 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8d2ed', endColorstr='#c7e299',GradientType=0 ); /* IE6-9 */
 			border: 3px double white;
 			color: white;
-			font-size: 10px;
+			font-size: 20px;
 			font-style: italic;
-			line-height: 10px;
+			line-height: 20px;
 			text-transform: uppercase;
 			text-align: center;
-			font-family:'Kreon', serif;
+			font-family:lora;
 		}
       
+      .col{
+      padding-top:5px;
+      padding-left:10px;
+      padding-right:15px;
+        padding-bottom:10px;
+      text-align:justify;}
       
-      
-      .header{
-      /*border-bottom: 1px solid #666; */
-      
-      width:800px;
-      height:100px;
+                  .photo{
+      border:2px solid #FFF;
+      padding:6px;
+      display:inline;
+      background:white;
+        max-height:300px;
+      width:auto;
       text-align:center;
-        margin:auto;
+} 
       
-}
+            a{
+      color: #727272;
+      text-decoration:none;}
+      
+      a:hover{
+      color: #ACD4E1;
+      text-decoration:none;}
+      
+      h1{
+      font-size:11px;
+              border-bottom:1px solid #fff;
+      width:100%;}
       
       .himg{
 text-align:center;
@@ -128,211 +145,63 @@ text-align:center;
         height:150px;
         width:150px;
         border-radius:100px;
-        padding:10px;
-
-        margin-left:20px;
+        padding:13px ;
       }
       
-      .ht{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-                font-family:"Damion", cursive;
-    font-size:65px;
-        color:#4794d3;
-         text-shadow:
-   -1px -1px 0 #FFF,  
-    1px -1px 0 #FFF,
-    -1px 1px 0 #FFF,
-     1px 1px 0 #FFF;
-}
-      
-            div.copy{
-        position:absolute;
-        bottom:10px;
-        right:10px;
-      font-family: 'Cute Font', cursive;
-              
-      }
-      
-      h1{
-font-family:"Karla",sans-serif;
-            letter-spacing:.75px;
-      
-        display:block;
-        font-size:16px;
-        border-bottom:1px solid #fff;
-text-align:left;
-        font-weight:normal;
-      }
-      
-      u{
-  text-decoration: underline;
-  text-decoration-color: #cdeb8e;
-                font-style:italic;
-            letter-spacing:.75px;
-                color:#666;
-      }
-      
-      h2{
-        font-family:'Kreon',serif;
-            letter-spacing:.75px;
-
-        display:inline;
-        font-size:16px;
-        
-        padding-left:20px;
-      }
-      
-            .subh{
-        font-family:'Kreon',serif;
-            letter-spacing:.75px;
-       
-        font-size:12px;
-        margin-top:-15px;
-              color:#fff;
-      }
-      
-            
-      
-      .block{
-          font-family:'Kreon',serif;
-    letter-spacing:.75px;
-        width:80%;
-        position:relative;
-        margin: auto;
-      }
-      
-      a{
-      color: #F8FFAE;
-      text-decoration:none;
-      font-size:14px;}
-      
-      a:hover{
-      color: #43C6AC;
-      text-decoration:none;}
-      
-      .tall{
-      border: 1px solid #e2e2e2;
-      border-radius:100%;}
-      
-
-      
-      		ul {
-    list-style-image: url('https://66.media.tumblr.com/19bbfcb24e73acdd09027950570614c9/tumblr_psg9urunFa1wyarz6o1_75sq.gif');
-        list-style-position: outside;
-        padding-left:20px;
-        padding-right:10px;
-            line-height:130%;
-}
-     
-
-      .big{
-      font-size:16px;
-      font-family:'Kreon',serif;}
-      
-      .narrow {
-    padding-right:20px;
-      padding-left:20px;
-      text-align:justify;
-      size:16px;}
-      
-            .block{
-          font-family:'Kreon',serif;
-    letter-spacing:.75px;
-        width:80%;
-        position:relative;
-        margin: auto;
-      }
-      
-            .photo{
-      border:2px solid #dbdbdb;
-      padding:6px;
-      display:inline;
-      background:white;
-        max-height:300px;
-      width:auto;
-      text-align:center;
-            float:left;
-            margin-right:20px;}
-
-  </style>
+    </style>
   </head>
   <body>
-    <div id="mainc">
-      <div class="header">
-        <div class="ht"> Elliot Gavin Keenan</div>
-      </div>
-      <div id="menu2"><a href="/index">home</a> <a href="/about">about</a> <a
-          href="/interviews">interviews</a> <a href="/connect">connect</a></div>
-      <div id="maind">
-        <center><img class="himg" src="https://66.media.tumblr.com/b0eae4887186dc333faf4b8678a0836a/tumblr_pvq1ci1SAR1wyarz6o1_250.png"></center>
-        Elliot Gavin Keenan is the author of <i>On Being Insane</i>. He is 23
-        years old and a PhD student in Human Development &amp; Psychology at
-        UCLA. His interests are in creating statistical models of
-        neuropsychiatric disorders, drawing on his own experiences with autism
-        and bipolar disorder. His hobbies include playing strategy board games,
-        riding kick scooters around Westwood Village, and painting. <br>
-        <br>
-        <br>
-        <center><img src="https://images-na.ssl-images-amazon.com/images/I/515vgsY6DOL.jpg"
-            class="photo"></center>
-        <br>
-        <h1>On Being Insane</h1>
-        <div class="big"><i>On Being Insane</i> is lyrical memoir I wrote in my
-          senior year of college. It was published by Dreaming Big Publications
-          in October 2017.</div>
-        <br>
-        <br>
-        The book is a mosaic of nonlinear fragments, highly experiential as it
-        swirls through the speaker's deep-seated uneasiness with a subjective
-        loss of himself and his memories. Yet while the past is held up to the
-        light, the narrative is propelled forward by the rip-current of
-        transition at the precipice of emerging adulthood. <i>On Being Insane</i>
-        explores the notion of identity, navigates the liminal spaces of
-        intersectionality, and ultimately sings in an unflinchingly honest
-        celebration of the self.<br>
-        <br>
-        <br>
-        <br>
-        <center> <a href="https://www.amazon.com/gp/product/1947381024">Buy it
-            on Amazon here</a>.<br>
-          If you read it, please help me out and leave a review!</center>
-        <br>
-        <br>
-        <br>
-        <h1>Everything Else</h1>
-        <a href="http://www.gravelmag.com/elliot-gavin-keenan.html">Read it in
-          Gravel magazine</a><br>
-        <div class="big">Published in February 2017.</div>
-        <br>
-        <div class="block"> She’s a doctoral student in the psychology
-          department. But she told me that she used to write as if seized by a
-          certain fervor for it, for the language, for poetry. I imagined Van
-          Gogh and his passion for painting, his insatiable hunger. I thought I
-          wanted to kiss those lips stained with yellow paint. Yellow, the color
-          of the edges of a street, the boundaries of a self crossed like two
-          neurons, the actualization of a synesthetic dream. To imbibe it is to
-          take all of that in, the passion, life thrust under your tongue. I
-          wanted that. </div>
-        <br>
-        <h1> Notes to Self </h1>
-        <a href="http://lunchticket.org/notes-to-self/">Read it in Lunch Ticket</a><br>
-        <div class="big">Published in Spring/Summer 2018.</div>
-        <br>
-        <div class="block"> Yes, one day — maybe soon, I will put down the pen,
-          and I will leave you. Maybe ECT will bring me back for a while. But
-          not forever. When this happens, you will be hurt and alone, I know.
-          When I cease to exist within our mind, I suppose that is like dying. I
-          have always been characterized as a confident voice; yet I am
-          face-to-face with an indescribable fear — I do not know what will
-          happen to me after I die. But, I think I will miss being alive;
-          breathing, eating, writing, <i>living</i>, even if you do not
-          remember me or anything anymore, maybe in some way, somewhere — I will
-          live on in you. </div>
+    <div class="gradient"> </div>
+    <div class="slide"></div>
+    <div id="wrapper">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col">
+            <center><img src="http://orig02.deviantart.net/6535/f/2016/215/7/0/potted_sprout_by_blushbun-dacgjfa.gif"><br>
+            </center>
+            <h1>Collected Essays:</h1>
+            <i>Everything Else</i> <a href="http://www.gravelmag.com/elliot-gavin-keenan.html">in
+              Gravel magazine</a><br>
+            <i>Notes to Self </i> <a href="http://lunchticket.org/notes-to-self/">in
+              Lunch Ticket</a> <br>
+            <br>
+            "She’s a doctoral student in the psychology department. But she told
+            me that she used to write as if seized by a certain fervor for it,
+            for the language, for poetry. I imagined Van Gogh and his passion
+            for painting, his insatiable hunger. I thought I wanted to kiss
+            those lips stained with yellow paint. Yellow, the color of the edges
+            of a street, the boundaries of a self crossed like two neurons, the
+            actualization of a synesthetic dream. To imbibe it is to take all of
+            that in, the passion, life thrust under your tongue. I wanted that."
+            <br>
+            <br>
+            <h1> Links: </h1>
+            <a href="/about">About Elliot</a> — <a href="interviews">Interviews</a>
+            — <a href="contact">Contact &amp; Social Media</a> — <a href="quotes">Favorite
+              Quotes</a> — <a href="upcoming">Upcoming Work</a> <br>
+            <br>
+            <center><img class="himg" src="https://66.media.tumblr.com/b0eae4887186dc333faf4b8678a0836a/tumblr_pvq1ci1SAR1wyarz6o1_250.png"></center>
+          </div>
+          <div class="col bio"> E<b><i>lliot Gavin Keenan</i></b> is 24 years
+            old and lives in Los Angeles with his cat. He's a PhD student at
+            UCLA where he creates statistical models of autism and bipolar
+            disorder. Born with autism and diagnosed with bipolar disorder at
+            17, Keenan's writing takes on the experience of being different from
+            the inside-out. <br>
+            <br>
+            <br>
+            <center><img src="https://images-na.ssl-images-amazon.com/images/I/515vgsY6DOL.jpg"
+                class="photo"></center>
+            <br>
+            <br>
+            <i>On Being Insane</i> is lyrical memoir I wrote in my senior year
+            of college. It was published by Dreaming Big Publications in October
+            2017. <a href="https://www.amazon.com/gp/product/1947381024">Buy it
+              on Amazon here</a>. If you read it, please help me out and leave a
+            review! </div>
+        </div>
       </div>
     </div>
+    <div class="copy"> Elliot Gavin Keenan is an author of creative nonfiction.</div>
   </body>
 </html>
