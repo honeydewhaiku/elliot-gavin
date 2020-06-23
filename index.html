@@ -5,12 +5,12 @@
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <title>Elliot Gavin Keenan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,600&amp;family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,600&amp;family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
       rel="stylesheet">
     <style>
       body{
@@ -19,7 +19,7 @@ background:#f9f9f9;
     font-family:"IBM Plex Serif",serif;
     font-size:11px;
     letter-spacing:.75px;}
-      
+
       .gradient{
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,fdffff+0,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+89,b1d8f5+91,caddb8+100 */
 background: #e1ffff; /* Old browsers */
@@ -32,58 +32,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', end
 background-repeat:no-repeat;
         background-size:cover;
         width:100%;
-        min-height:100%;
-        height:auto;
-background-attachment: fixed;
-        position:fixed;
+        height:100%;
 
-        
+background-attachment: fixed;
+        position:absolute;
+
+top:0;
+left:0;
       }
-      
+
       .slide{
         position:fixed;
       background-color: #323233;
         background-attachment: fixed;
-        width:50%;
+        width:80%;
         min-height:100%;
         height:auto;
 background-size:cover;
-
+top:0;
+left:0;
       }
-      
+
       .wrapper{
-        position:absolute;
       display:flex;
         justify-content:center;
   align-items: center;
         width:100%;
           height:100%;
       }
-      
+
       .container-lg{
-        position:absolute;
-    background-color:rgba(255,255,255,.8);
-    border: 5px solid #fff;
-    border-radius:5px;
-                width:30%;
-        min-width:400px;
+        position:relative;
+    background-color:rgba(255,255,255,1);
+    border: 5px solid #eee;
+top:20%;
+                width:80%;
         height:auto;
         margin-bottom:20px;
-        left:35%;
-        top: 20%;
+        margin-top:100px;
+        padding-top:20px;
+        padding-bottom:20px;
       }
-      
+
             .copy{
-        position:absolute;
-top: 15%;
+width:100%;
 text-align:center;
-              min-width:100%;
               font-family:"Cute Font",cursive;
               font-size:16px;
               color:#8e8e8e;
 
       }
-      
+
       .bio:first-letter
 		{
 			width: 30px;
@@ -94,10 +93,7 @@ text-align:center;
 			padding-right:8px;
 			float: left;
       background: #a8d2ed; /* Old browsers */
-background: -moz-linear-gradient(top, #a8d2ed 0%, #c7e299 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #a8d2ed 0%,#c7e299 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #a8d2ed 0%,#c7e299 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8d2ed', endColorstr='#c7e299',GradientType=0 ); /* IE6-9 */
+
 			border: 3px double white;
 			color: white;
 			font-size: 20px;
@@ -107,14 +103,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8d2ed', end
 			text-align: center;
 			font-family:lora;
 		}
-      
+
       .col{
       padding-top:5px;
       padding-left:10px;
       padding-right:15px;
         padding-bottom:10px;
-      text-align:justify;}
-      
+      text-align:justify;
+    margin:50px;}
+
+      .col:nth-of-type(odd){
+        border-right: 1px solid #e2e2e2;
+padding-right:50px;
+      }
+
                   .photo{
       border:2px solid #FFF;
       padding:6px;
@@ -123,21 +125,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8d2ed', end
         max-height:300px;
       width:auto;
       text-align:center;
-} 
-      
+}
+
             a{
-      color: #329cba;
+      color: #a8d2ed;
       text-decoration:none;}
-      
+
       a:hover{
-      color: #ACD4E1;
+      color: #e2e2e2;
       text-decoration:none;}
-      
+
       h1{
       font-size:11px;
               border-bottom:1px solid #fff;
       width:100%;}
-      
+
       .himg{
 text-align:center;
         display:block;
@@ -146,7 +148,7 @@ text-align:center;
         border-radius:100px;
         padding:13px ;
       }
-      
+
                   		ul {
     list-style-image: url('https://66.media.tumblr.com/19bbfcb24e73acdd09027950570614c9/tumblr_psg9urunFa1wyarz6o1_75sq.gif');
         list-style-position: outside;
@@ -154,7 +156,7 @@ text-align:center;
         padding-right:10px;
             line-height:130%;
 }
-      
+
     </style>
   </head>
   <body>
@@ -164,30 +166,26 @@ text-align:center;
       <div class="container-lg">
         <div class="row">
           <div class="col">
-            <center><img src="http://orig02.deviantart.net/6535/f/2016/215/7/0/potted_sprout_by_blushbun-dacgjfa.gif"><br>
-            </center>
+            <center><div class="copy"> Elliot Gavin Keenan is an author of creative nonfiction.</div><br><img src="http://orig02.deviantart.net/6535/f/2016/215/7/0/potted_sprout_by_blushbun-dacgjfa.gif"><br>
+            </center><br><br>
             <h1>Collected Essays:</h1>
-            <i>Everything Else</i> <a href="http://www.gravelmag.com/elliot-gavin-keenan.html">in
+            Everything Else <a href="http://www.gravelmag.com/elliot-gavin-keenan.html">in
               Gravel magazine</a><br>
-            <i>Notes to Self </i> <a href="http://lunchticket.org/notes-to-self/">in
+            Notes to Self  <a href="http://lunchticket.org/notes-to-self/">in
               Lunch Ticket</a> <br>
             <br>
-            "She’s a doctoral student in the psychology department. But she told
-            me that she used to write as if seized by a certain fervor for it,
-            for the language, for poetry. I imagined Van Gogh and his passion
-            for painting, his insatiable hunger. I thought I wanted to kiss
-            those lips stained with yellow paint. Yellow, the color of the edges
-            of a street, the boundaries of a self crossed like two neurons, the
-            actualization of a synesthetic dream. To imbibe it is to take all of
-            that in, the passion, life thrust under your tongue. I wanted that."
+            <h1>Books:</h1>
+            On Being Insane <a href="https://www.amazon.com/gp/product/1947381024">on Amazon</a><br>
+            Luminous Mind</a> (unpublished)
             <br>
             <br>
             <h1> Links: </h1>
-            <a href="/about">About Elliot</a> — <a href="/interviews">Interviews</a>
-            — <a href="/contact">Contact &amp; Social Media</a> — <a href="/quotes">Favorite
-              Quotes</a> — <a href="/upcoming">Upcoming Work</a> <br>
+            <a href="https://bipolarcoaster.blog/about/">About Elliot</a><br>
+            <a href="https://bipolarcoaster.blog/interviews/">Interviews</a><br>
+            <a href="https://elliotgavin.carrd.co/">Carrd (contact info)</a><br>
+            <a href="https://bipolarcoaster.blog/">BipolarCoaster blog</a> <br>
             <br>
-            <center><img class="himg" src="https://66.media.tumblr.com/b0eae4887186dc333faf4b8678a0836a/tumblr_pvq1ci1SAR1wyarz6o1_250.png"></center>
+
           </div>
           <div class="col bio"> E<b><i>lliot Gavin Keenan</i></b> is 24 years
             old and lives in Los Angeles with his cat. He's a PhD student at
@@ -196,19 +194,12 @@ text-align:center;
             17, Keenan's writing takes on the experience of being different from
             the inside-out. <br>
             <br>
+            <center><img class="himg" src="https://66.media.tumblr.com/b0eae4887186dc333faf4b8678a0836a/tumblr_pvq1ci1SAR1wyarz6o1_250.png"></center>
             <br>
-            <center><img src="https://images-na.ssl-images-amazon.com/images/I/515vgsY6DOL.jpg"
-                class="photo"></center>
-            <br>
-            <br>
-            <i>On Being Insane</i> is lyrical memoir I wrote in my senior year
-            of college. It was published by Dreaming Big Publications in October
-            2017. <a href="https://www.amazon.com/gp/product/1947381024">Buy it
-              on Amazon here</a>. If you read it, please help me out and leave a
-            review! </div>
+            </div>
         </div>
       </div>
     </div>
-    <div class="copy"> Elliot Gavin Keenan is an author of creative nonfiction.</div>
+
   </body>
 </html>
